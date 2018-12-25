@@ -4,6 +4,7 @@
     <TargetFramework>net461</TargetFramework>
   </PropertyGroup>
 
+  <!-- Reference to GitExtensions dlls. -->
   <ItemGroup>
     <Reference Include="GitUIPluginInterfaces">
       <HintPath>..\..\references\GitExtensions\GitUIPluginInterfaces.dll</HintPath>
@@ -25,6 +26,30 @@
     <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(GitExtensionsDebugPluginsPath)" />
   </Target>
 
-
+  <!-- Pack as .nupkg with dependency on GitExtensions.Plugins -->
+  <PropertyGroup>
+    <NuspecFile>$(MSBuildThisFileDirectory)$(MSBuildProjectName).nuspec</NuspecFile>
+    <Description>An example of GitExtensions plugin distributed as NuGet package.</Description>
+    <PackageProjectUrl>https://github.com/maraf/GitExtensions.EmptyPlugin</PackageProjectUrl>
+  </PropertyGroup>
+  <Target Name="SetPackageProperties" BeforeTargets="GenerateNuspec">
+    <PropertyGroup>
+      <NuspecProperties>
+        id=$(PackageId);
+        version=$(PackageVersion);
+        configuration=$(Configuration);
+        tags=$(PackageTags.Replace(';',' '));
+        projectUrl=$(PackageProjectUrl);
+        iconUrl=$(PackageIconUrl);
+        repositoryUrl=$(RepositoryUrl);
+        repositoryType=$(RepositoryType);
+        repositoryCommit=$(RepositoryCommit);
+        author=$(Authors);
+        copyright=$(Copyright);
+        description=$(Description);
+        targetDir=$(TargetDir);
+      </NuspecProperties>
+    </PropertyGroup>
+  </Target>
 
 </Project>
