@@ -9,6 +9,9 @@
     <Reference Include="GitUIPluginInterfaces">
       <HintPath>..\..\references\GitExtensions\GitUIPluginInterfaces.dll</HintPath>
     </Reference>
+    <Reference Include="ResourceManager">
+      <HintPath>..\..\references\GitExtensions\ResourceManager.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
