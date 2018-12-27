@@ -1,4 +1,5 @@
-﻿using GitUIPluginInterfaces;
+﻿using GitExtensions.EmptyPlugin.Properties;
+using GitUIPluginInterfaces;
 using ResourceManager;
 using System;
 using System.Collections.Generic;
@@ -10,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GitExtensions.BundleBackuper
+namespace GitExtensions.EmptyPlugin
 {
     [Export(typeof(IGitPlugin))]
     public class Plugin : GitPluginBase
@@ -19,6 +20,7 @@ namespace GitExtensions.BundleBackuper
         {
             Name = "EmptyPlugin";
             Description = "Empty Plugin";
+            Icon = Resources.Icon;
         }
 
         public override bool Execute(GitUIEventArgs gitUiCommands)
