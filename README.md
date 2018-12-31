@@ -1,5 +1,7 @@
 # GitExtensions.EmptyPlugin
-An example/empty repository for building GitExtensions plugin which can be installed using [GitExtensions.PluginManager](https://github.com/maraf/GitExtensions.PluginManager).
+An example/empty repository for building a GitExtensions plugin that can be installed using [GitExtensions.PluginManager](https://github.com/maraf/GitExtensions.PluginManager).
+
+The package published to NuGet.org feed.
 
 ### Files to keep an eye on
  - [Plugin.cs](src/GitExtensions.EmptyPlugin/Plugin.cs)
