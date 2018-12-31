@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net461</TargetFramework>
@@ -43,6 +43,8 @@
   <!-- Pack as .nupkg with dependency on GitExtensions.Plugins -->
   <PropertyGroup>
     <NuspecFile>$(MSBuildThisFileDirectory)$(MSBuildProjectName).nuspec</NuspecFile>
+    <Authors>Maraf</Authors>
+    <Company>Neptuo</Company>
     <Description>An example of GitExtensions plugin distributed as NuGet package.</Description>
     <PackageProjectUrl>https://github.com/maraf/GitExtensions.EmptyPlugin</PackageProjectUrl>
   </PropertyGroup>
