@@ -13,6 +13,9 @@ using System.Windows.Forms;
 
 namespace GitExtensions.EmptyPlugin
 {
+    /// <summary>
+    /// An empty Git Extensions plugin implementation.
+    /// </summary>
     [Export(typeof(IGitPlugin))]
     public class Plugin : GitPluginBase
     {
@@ -23,9 +26,9 @@ namespace GitExtensions.EmptyPlugin
             Icon = Resources.Icon;
         }
 
-        public override bool Execute(GitUIEventArgs gitUiCommands)
+        public override bool Execute(GitUIEventArgs e)
         {
-            MessageBox.Show("Hello from Empty Plugin.");
+            MessageBox.Show(e.OwnerForm, "Hello from the Empty Plugin.", "Git Extensions");
             return true;
         }
     }
