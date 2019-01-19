@@ -47,6 +47,7 @@
     <Company>Neptuo</Company>
     <Description>An example of GitExtensions plugin distributed as NuGet package.</Description>
     <PackageProjectUrl>https://github.com/maraf/GitExtensions.EmptyPlugin</PackageProjectUrl>
+    <PackageTags>Neptuo GitExtensions</PackageTags>
   </PropertyGroup>
   <Target Name="SetPackageProperties" BeforeTargets="GenerateNuspec">
     <PropertyGroup>
