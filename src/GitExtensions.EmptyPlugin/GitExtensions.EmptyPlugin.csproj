@@ -30,6 +30,7 @@
 
   <!-- Before building project ensure we have debug GitExtensions instance (for references and debugging). -->
   <PropertyGroup>
+    <GitExtensionsReferenceSource>github</GitExtensionsReferenceSource>
     <GitExtensionsReferenceVersion>v3.1</GitExtensionsReferenceVersion>
   </PropertyGroup>
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
