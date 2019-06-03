@@ -1,4 +1,7 @@
 # GitExtensions.EmptyPlugin
+
+[THIS REPOSITORY HAS BEEN MOVED TO GITEXTENSIONS ORGANIZATION](https://github.com/gitextensions/gitextensions.plugintemplate)
+
 An example/empty repository for building a GitExtensions plugin that can be installed using [GitExtensions.PluginManager](https://github.com/maraf/GitExtensions.PluginManager).
 
 The package published to [NuGet.org](https://www.nuget.org/packages/GitExtensions.EmptyPlugin) feed.
